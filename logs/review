@@ -1,0 +1,15 @@
+2022-08-30 12:56:33.844  INFO 18204 --- [main] com.letscode.review.ReviewApplication    : Starting ReviewApplication using Java 11.0.2 on BBTMF-4MT00L3 with PID 18204 (C:\Users\F4352920\Let's Code\review\target\classes started by F4352920 in C:\Users\F4352920\Let's Code\review)
+2022-08-30 12:56:33.847  INFO 18204 --- [main] com.letscode.review.ReviewApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-08-30 12:56:34.741  INFO 18204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-30 12:56:34.748  INFO 18204 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-30 12:56:34.752  INFO 18204 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-30 12:56:34.860  INFO 18204 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-30 12:56:34.861  INFO 18204 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 974 ms
+2022-08-30 12:56:35.096  INFO 18204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-30 12:56:35.108  INFO 18204 --- [main] com.letscode.review.ReviewApplication    : Started ReviewApplication in 1.594 seconds (JVM running for 1.94)
+2022-08-30 12:56:35.164  INFO 18204 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-30 12:56:35.166  INFO 18204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-30 12:56:35.167  INFO 18204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-08-30 12:56:35.190  INFO 18204 --- [http-nio-8080-exec-1] c.l.review.endpoints.HelloEndpoints      : Sucesso: /hello
+2022-08-30 12:56:49.193  INFO 18204 --- [http-nio-8080-exec-3] c.l.review.endpoints.HelloEndpoints      : Sucesso: /hello/{nome}
+2022-08-30 12:56:52.954  INFO 18204 --- [http-nio-8080-exec-4] c.l.review.endpoints.HelloEndpoints      : Sucesso: /hello/{nome}/horario
