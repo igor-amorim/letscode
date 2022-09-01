@@ -1,15 +1,99 @@
-2022-08-30 12:56:33.844  INFO 18204 --- [main] com.letscode.review.ReviewApplication    : Starting ReviewApplication using Java 11.0.2 on BBTMF-4MT00L3 with PID 18204 (C:\Users\F4352920\Let's Code\review\target\classes started by F4352920 in C:\Users\F4352920\Let's Code\review)
-2022-08-30 12:56:33.847  INFO 18204 --- [main] com.letscode.review.ReviewApplication    : No active profile set, falling back to 1 default profile: "default"
-2022-08-30 12:56:34.741  INFO 18204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-30 12:56:34.748  INFO 18204 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-30 12:56:34.752  INFO 18204 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-2022-08-30 12:56:34.860  INFO 18204 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-30 12:56:34.861  INFO 18204 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 974 ms
-2022-08-30 12:56:35.096  INFO 18204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-30 12:56:35.108  INFO 18204 --- [main] com.letscode.review.ReviewApplication    : Started ReviewApplication in 1.594 seconds (JVM running for 1.94)
-2022-08-30 12:56:35.164  INFO 18204 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-30 12:56:35.166  INFO 18204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-30 12:56:35.167  INFO 18204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2022-08-30 12:56:35.190  INFO 18204 --- [http-nio-8080-exec-1] c.l.review.endpoints.HelloEndpoints      : Sucesso: /hello
-2022-08-30 12:56:49.193  INFO 18204 --- [http-nio-8080-exec-3] c.l.review.endpoints.HelloEndpoints      : Sucesso: /hello/{nome}
-2022-08-30 12:56:52.954  INFO 18204 --- [http-nio-8080-exec-4] c.l.review.endpoints.HelloEndpoints      : Sucesso: /hello/{nome}/horario
+2022-09-01 12:50:20.346  INFO 6848 --- [main] com.letscode.review.ReviewApplication    : Starting ReviewApplication using Java 11.0.2 on BBTMF-4MT00L3 with PID 6848 (C:\Users\F4352920\Let's Code\review\target\classes started by F4352920 in C:\Users\F4352920\Let's Code\review)
+2022-09-01 12:50:20.366  INFO 6848 --- [main] com.letscode.review.ReviewApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-09-01 12:50:21.545  INFO 6848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-01 12:50:21.572  INFO 6848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2022-09-01 12:50:23.292  INFO 6848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-01 12:50:23.312  INFO 6848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-01 12:50:23.314  INFO 6848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-01 12:50:23.740  INFO 6848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-01 12:50:23.740  INFO 6848 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3285 ms
+2022-09-01 12:50:23.802  INFO 6848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-01 12:50:23.944  INFO 6848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-01 12:50:23.952  INFO 6848 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:review'
+2022-09-01 12:50:24.152  INFO 6848 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-01 12:50:24.206  INFO 6848 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-01 12:50:24.368  INFO 6848 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-01 12:50:24.520  INFO 6848 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-09-01 12:50:25.334  INFO 6848 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-01 12:50:25.352  INFO 6848 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-01 12:50:25.384  WARN 6848 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'produtoEndpoints': Unsatisfied dependency expressed through field 'produtoService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'produtoServiceImpl': Unsatisfied dependency expressed through field 'produtoDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.letscode.review.dao.ProdutoDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-09-01 12:50:25.393  INFO 6848 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-01 12:50:25.399  INFO 6848 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-09-01 12:50:25.417  INFO 6848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-01 12:50:25.433  INFO 6848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-01 12:50:25.436  INFO 6848 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-09-01 12:50:25.464  INFO 6848 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-09-01 12:50:25.515 ERROR 6848 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field produtoDao in com.letscode.review.service.impl.ProdutoServiceImpl required a bean of type 'com.letscode.review.dao.ProdutoDao' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.letscode.review.dao.ProdutoDao' in your configuration.
+
+2022-09-01 12:51:31.309  INFO 22712 --- [main] com.letscode.review.ReviewApplication    : Starting ReviewApplication using Java 11.0.2 on BBTMF-4MT00L3 with PID 22712 (C:\Users\F4352920\Let's Code\review\target\classes started by F4352920 in C:\Users\F4352920\Let's Code\review)
+2022-09-01 12:51:31.320  INFO 22712 --- [main] com.letscode.review.ReviewApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-09-01 12:51:32.075  INFO 22712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-01 12:51:32.205  INFO 22712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 1 JPA repository interfaces.
+2022-09-01 12:51:33.301  INFO 22712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-01 12:51:33.318  INFO 22712 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-01 12:51:33.318  INFO 22712 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-01 12:51:33.523  INFO 22712 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-01 12:51:33.523  INFO 22712 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2121 ms
+2022-09-01 12:51:33.578  INFO 22712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-01 12:51:33.689  INFO 22712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-01 12:51:33.698  INFO 22712 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:review'
+2022-09-01 12:51:33.871  INFO 22712 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-01 12:51:33.930  INFO 22712 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-01 12:51:34.063  INFO 22712 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-01 12:51:34.178  INFO 22712 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-09-01 12:51:34.611  INFO 22712 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-01 12:51:34.620  INFO 22712 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-01 12:51:34.945  WARN 22712 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-01 12:51:35.777  INFO 22712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-01 12:51:35.797  INFO 22712 --- [main] com.letscode.review.ReviewApplication    : Started ReviewApplication in 5.072 seconds (JVM running for 5.714)
+2022-09-01 12:51:42.357  INFO 22712 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-01 12:51:42.357  INFO 22712 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-01 12:51:42.365  INFO 22712 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2022-09-01 12:54:44.632  WARN 22712 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Character , is neither a decimal digit number, decimal point, nor "e" notation exponential mark.; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Character , is neither a decimal digit number, decimal point, nor "e" notation exponential mark.<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 4, column: 12] (through reference chain: com.letscode.review.dto.ProdutoDto["preco"])]
+2022-09-01 12:59:06.326  WARN 22712 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+2022-09-01 13:02:31.628  INFO 22712 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-01 13:02:31.628  INFO 22712 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-09-01 13:02:31.648  INFO 22712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-01 13:02:31.657  INFO 22712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-01 13:25:24.289  INFO 24116 --- [main] com.letscode.review.ReviewApplication    : Starting ReviewApplication using Java 11.0.2 on BBTMF-4MT00L3 with PID 24116 (C:\Users\F4352920\Let's Code\review\target\classes started by F4352920 in C:\Users\F4352920\Let's Code\review)
+2022-09-01 13:25:24.300  INFO 24116 --- [main] com.letscode.review.ReviewApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-09-01 13:25:25.203  INFO 24116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-01 13:25:25.290  INFO 24116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 1 JPA repository interfaces.
+2022-09-01 13:25:26.476  INFO 24116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-01 13:25:26.499  INFO 24116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-01 13:25:26.503  INFO 24116 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-01 13:25:26.775  INFO 24116 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-01 13:25:26.776  INFO 24116 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2396 ms
+2022-09-01 13:25:26.833  INFO 24116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-01 13:25:26.964  INFO 24116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-01 13:25:26.984  INFO 24116 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:review'
+2022-09-01 13:25:27.180  INFO 24116 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-01 13:25:27.273  INFO 24116 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-01 13:25:27.416  INFO 24116 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-01 13:25:27.533  INFO 24116 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-09-01 13:25:28.096  INFO 24116 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-01 13:25:28.109  INFO 24116 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-01 13:25:28.487  WARN 24116 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-01 13:25:29.538  INFO 24116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-01 13:25:29.553  INFO 24116 --- [main] com.letscode.review.ReviewApplication    : Started ReviewApplication in 5.988 seconds (JVM running for 6.755)
+2022-09-01 13:25:51.674  INFO 24116 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-01 13:25:51.677  INFO 24116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-01 13:25:51.679  INFO 24116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
