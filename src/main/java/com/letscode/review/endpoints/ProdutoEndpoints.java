@@ -3,8 +3,6 @@ package com.letscode.review.endpoints;
 import java.util.List;
 import java.util.Optional;
 
-import javax.validation.constraints.Null;
-
 import com.letscode.review.dto.ProdutoDto;
 import com.letscode.review.models.Produto;
 import org.springframework.http.HttpStatus;
