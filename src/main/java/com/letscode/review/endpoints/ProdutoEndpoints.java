@@ -1,6 +1,10 @@
 package com.letscode.review.endpoints;
 
 import java.util.List;
+import java.util.Optional;
+
+import javax.validation.constraints.Null;
+
 import com.letscode.review.dto.ProdutoDto;
 import com.letscode.review.models.Produto;
 import org.springframework.http.HttpStatus;
@@ -24,6 +28,16 @@ public class ProdutoEndpoints {
     public ResponseEntity<List<Produto>> getProdutos() {
         List<Produto> produtos = produtoService.listarProdutos();
         return ResponseEntity.ok(produtos);
+    }
+
+    @RequestMapping(path = "/produto/{id}", method = RequestMethod.GET, produces = APPLICATION_JSON_VALUE)
+    public ResponseEntity<?> getProduto(@PathVariable long id) {
+        Optional<Produto> produto = produtoService.buscarProduto(id);
+        if (produto.isEmpty()) {
+            return new ResponseEntity<String>("Produto não encontrado.", HttpStatus.BAD_REQUEST);
+        } else {
+            return ResponseEntity.ok(produto);
+        }
     }
 
     @RequestMapping(path = "/produto", method = RequestMethod.POST)

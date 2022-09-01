@@ -1,6 +1,7 @@
 package com.letscode.review.service.impl;
 
 import java.util.List;
+import java.util.Optional;
 import com.letscode.review.dao.ProdutoDao;
 import com.letscode.review.dto.ProdutoDto;
 import com.letscode.review.models.Produto;
@@ -17,6 +18,11 @@ public class ProdutoServiceImpl implements ProdutoService {
     @Override
     public List<Produto> listarProdutos() {
         return produtoDao.findAll();
+    }
+
+    @Override
+    public Optional<Produto> buscarProduto(long id) {
+        return produtoDao.findById(id);
     }
 
     @Override
