@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @RestController
@@ -58,6 +59,7 @@ public class ProdutoEndpoints {
         }
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
     @RequestMapping(path = "/produto/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<String> removerCliente(@PathVariable long id) {
         boolean OK = produtoService.removerProduto(id);
